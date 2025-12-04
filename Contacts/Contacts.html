@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhianne's Kitchen | Contact</title>
+    
+    <link rel="stylesheet" href="../Header/Header.css">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&family=Montserrat:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Contacts.css" />
+  </head>
+  <body>
+   <header class="header">
+
+    <div class="logo">
+        <a href="../Home/Home.html">
+            <img src="../images/LOGO.png" alt="Rhianne's Kitchen Logo">
+        </a>
+    </div>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="right-section">
+        <div class="settings-wrapper" style="position: relative;">
+            <button class="settings-button" aria-label="Settings" id="settingsBtn">
+                <img src="../Images/profile.png" alt="Settings" class="setting-icon">
+            </button>
+            <div class="settings-dropdown" id="settingsDropdown">
+                <a href="../Login/Login.html">Account</a>
+                <a href="../Orders/Orders.html">Orders</a>
+            </div>
+        </div>
+        <div class="cart" id="cartBtn">
+            <img src="../Images/cart.png" alt="Cart">
+        </div>
+    </div>
+
+</header>
+
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <button class="close-cart" id="closeCart">&larr;</button>
+        <h2>Your cart</h2>
+    </div>
+    <div class="cart-items" id="cartItems">
+        
+    </div>
+    <div class="cart-footer">
+        <div class="cart-summary">
+            <p>Items: <span id="itemCount">0</span></p>
+            <p>Total: <span id="cartTotal">₱0</span></p>
+        </div>
+        <button class="checkout-btn">Go to Checkout</button>
+    </div>
+</div>
+
+    <div class="page">
+      
+
+      <!-- Main content -->
+      <main class="content">
+        <section class="contact-hero">
+          <h1 class="contact-title">Contact Us</h1>
+          <p class="contact-subtitle">
+            We'd love to hear from you! Reach out to us with any questions or feedback.
+          </p>
+        </section>
+
+        <section class="contact-grid">
+
+        <article
+            class="card"
+            role="button"
+            tabindex="0"
+            aria-pressed="false"
+            data-action="https://www.google.com/maps/search/?api=1&query=16+Ballast%2C+Meralco+Village%2C+Lias%2C+Marilao%2C+Bulacan"\>
+            <div class="card-bg"></div>
+            <div class="card-icon card-icon--location"></div>
+            <h2 class="card-heading">Visit Us</h2>
+            <p class="card-text">16 Ballast, Meralco Village, Lias, Marilao, Bulacan</p>
+        </article>
+
+          <article
+            class="card"
+            role="button"
+            tabindex="0"
+            aria-pressed="false"
+            data-action="tel:+639925123163">
+            <div class="card-bg"></div>
+            <div class="card-icon card-icon--phone"></div>
+            <h2 class="card-heading">Call Us</h2>
+            <p class="card-text">+63 99 2512 3163</p>
+          </article>
+          
+          <article
+            class="card"
+            role="button"
+            tabindex="0"
+            aria-pressed="false"
+            data-action="mailto:jasminerhiannesoriano@gmail.com">
+            <div class="card-bg"></div>
+            <div class="card-icon card-icon--email"></div>
+            <h2 class="card-heading">Email Us</h2>
+            <p class="card-text card-text--email">
+              jasminerhiannesoriano@gmail.com
+            </p>
+          </article>
+
+        <article
+          class="card"
+          role="button"
+          tabindex="0"
+          aria-pressed="false"
+          data-action="https://www.facebook.com/profile.php?id=100057451269382">
+          <div class="card-bg"></div>
+          <div class="card-icon card-icon--social"></div>
+          <h2 class="card-heading">Follow Us</h2>
+          <p class="card-text">Rhianne's Kitchen</p>
+        </article>
+
+        </section>
+
+        <section class="map-section">
+          <div class="map-card">
+            <div class="map-header">
+              <h2 class="map-title">Rhianne’s Kitchen</h2>
+              <p class="map-subtitle">Meralco Village, Marilao, Bulacan</p>
+            </div>
+
+            <div class="map-image-wrapper">
+              <iframe
+                class="map-iframe"
+                title="Rhianne's Kitchen location"
+                src="https://www.google.com/maps?q=Meralco+Village+Marilao+Bulacan&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      
+
+<hr>
+
+<footer class="footer">
+    <p>&copy; 2025 Rhianne's Kitchen. All rights reserved.</p>
+    <h2>Make With Passion</h2>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+</footer>
+    <script src="Contacts.js"></script>
+    <script src="../Header/Header.js"></script>
+  </body>
+</html>
+
+

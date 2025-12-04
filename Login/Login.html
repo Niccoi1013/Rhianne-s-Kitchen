@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhianne's Kitchen | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500;700&family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="login-hero">
+        <div class="login-bg-wrapper" role="presentation">
+          <div class="login-bg" aria-hidden="true"></div>
+          <section class="login-panel">
+            <div class="login-header-row">
+              <a href="../Home/Home.html" class="back-button" title="Go back to home">
+                <img src="../Images/" alt="Back button" />
+              </a>
+              <h1 class="login-heading">Log into Your Account</h1>
+              <div class="login-inline-logo" aria-hidden="true">
+                <img src="../Images/LOGO.png" alt="Rhianne's Kitchen Logo" />
+              </div>
+            </div>
+
+            <form class="login-form">
+              <div class="login-field">
+                <label class="login-label" for="login-email">Email address</label>
+                <input
+                  id="login-email"
+                  type="email"
+                  class="login-input"
+                  placeholder="Email address"
+                />
+              </div>
+
+              <div class="login-field">
+                <label class="login-label" for="login-password">Password</label>
+                <div class="password-wrapper">
+                  <input
+                    id="login-password"
+                    type="password"
+                    class="login-input"
+                    placeholder="Password"
+                  />
+                  <button
+                    type="button"
+                    class="password-toggle"
+                    id="passwordToggle"
+                    aria-label="Toggle password visibility"
+                  >
+                    <svg
+                      class="eye-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="login-row">
+                <label class="login-remember">
+                  <input type="checkbox" />
+                  <span>Stay signed in</span>
+                </label>
+                <a href="#" class="login-forgot">Forgot Password?</a>
+              </div>
+
+              <button type="submit" class="login-submit" id="loginSubmit">Login</button>
+
+              <p class="login-or">or login with</p>
+
+              <div class="login-social-row">
+                <button
+                  type="button"
+                  class="login-social login-social--google"
+                  title="Sign in with Google"
+                  aria-label="Sign in with Google"
+                >
+                  <img class="google-login-icon" src="../Images/google.png" alt="Google logo" />
+                </button>
+
+                <button
+                  type="button"
+                  class="login-social login-social--facebook"
+                  title="Sign in with Facebook"
+                  aria-label="Sign in with Facebook"
+                >
+                  <img class="facebook-login-icon" src="../Images/facebook.png" alt="Facebook logo" />
+                </button>
+
+                <button
+                  type="button"
+                  class="login-social login-social--apple"
+                  title="Sign in with Apple"
+                  aria-label="Sign in with Apple"
+                >
+                  <img class="apple-login-icon" src="../Images/apple.png" alt="Apple logo" />
+                </button>
+              </div>
+
+              <p class="login-signup">Don't have an account? <a href="signup.html">Sign up</a></p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="Login.js"></script>
+  </body>
+</html>
+
+

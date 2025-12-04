@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhianne's Kitchen</title>
+    <link rel="stylesheet" href="../Header/Header.css">
+    <link rel="stylesheet" href="Home.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+    </style>
+    
+</head>
+<body>
+    
+<header class="header">
+
+    <div class="logo">
+        <a href="../Home/Home.html">
+            <img src="../images/LOGO.png" alt="Rhianne's Kitchen Logo">
+        </a>
+    </div>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="right-section">
+        <div class="settings-wrapper" style="position: relative;">
+            <button class="settings-button" aria-label="Settings" id="settingsBtn">
+                <img src="../Images/profile.png" alt="Settings" class="setting-icon">
+            </button>
+            <div class="settings-dropdown" id="settingsDropdown">
+                <a href="../Login/Login.html">Account</a>
+                <a href="../Orders/Orders.html">Orders</a>
+            </div>
+        </div>
+        <div class="cart" id="cartBtn">
+            <img src="../Images/cart.png" alt="Cart">
+        </div>
+    </div>
+
+</header>
+
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <button class="close-cart" id="closeCart">&larr;</button>
+        <h2>Your cart</h2>
+    </div>
+    <div class="cart-items" id="cartItems">
+        
+    </div>
+    <div class="cart-footer">
+        <div class="cart-summary">
+            <p>Items: <span id="itemCount">0</span></p>
+            <p>Total: <span id="cartTotal">₱0</span></p>
+        </div>
+        <button class="checkout-btn">Go to Checkout</button>
+    </div>
+</div>
+
+<main class="main">
+    <div class="main-page">
+        <h1>Welcome!</h1>
+        <h1>to</h1>
+        <h1>Rhianne's Kitchen</h1>
+       <p>We Make With Passion</p>
+       <div class="bg-cycler" aria-hidden="true"></div>
+    </div>
+
+   <div class="display-images">
+        <img src="../Images/dish 6.jpg" alt="Display Dish 1">
+        <img src="../Images/dish 7.jpg" alt="Display Dish 2">
+        <img src="../Images/dish 8.jpg" alt="Display Dish 3">
+        <img src="../Images/dish 9.jpg" alt="Display Dish 4">
+   </div>
+   
+   <h2 class="about-us-heading">
+    About Us
+   </h2>
+
+   <p class="about-us-paragraph">
+    Rhianne's Kitchen, founded in 2020, aims to bring people together through food made with passion. Deliveries, catering to food packs, home-cooked dishes, and pasta, we craft every meal to elevate your celebrations. With our motto, "We make with passion!", each dish is prepared and offered with care to add joy, flavor, and warmth to every occasion.
+   </p>
+
+   <div class="shortcuts">
+    <div class="shortcut-item">
+      <img src="../Images/collage 2.jpg" alt="Menu Showcase">
+      <h3 class="shortcut-heading">View our Menu</h3>
+      <button class="shortcut-button" id="menuBtn">Menu</button>
+    </div>
+    
+    <div class="shortcut-item">
+      <img src="../Images/collage 1.jpg" alt="Contact Information">
+      <h3 class="shortcut-heading">More Information</h3>
+      <button class="shortcut-button" id="contactsBtn">Contacts</button>
+    </div>
+   </div>
+
+</main>
+
+<hr>
+
+<footer class="footer">
+    <p>&copy; 2025 Rhianne's Kitchen. All rights reserved.</p>
+    <h2>Make With Passion</h2>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+</footer>
+
+<script src="Home.js"></script>
+<script src="../Header/Header.js"></script>
+</body>
+</html>

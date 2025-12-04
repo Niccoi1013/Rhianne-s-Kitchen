@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhianne's Kitchen</title>
+    <link rel="stylesheet" href="../Header/Header.css">
+    <link rel="stylesheet" href="Menu.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+    </style>
+    
+</head>
+<body>
+    
+<header class="header">
+
+    <div class="logo">
+        <a href="../Home/Home.html">
+            <img src="../images/LOGO.png" alt="Rhianne's Kitchen Logo">
+        </a>
+    </div>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="right-section">
+        <div class="settings-wrapper" style="position: relative;">
+            <button class="settings-button" aria-label="Settings" id="settingsBtn">
+                <img src="../Images/profile.png" alt="Settings" class="setting-icon">
+            </button>
+            <div class="settings-dropdown" id="settingsDropdown">
+                <a href="../Login/Login.html">Account</a>
+                <a href="../Orders/Orders.html">Orders</a>
+            </div>
+        </div>
+        <div class="cart" id="cartBtn">
+            <img src="../Images/cart.png" alt="Cart">
+        </div>
+    </div>
+
+</header>
+
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <button class="close-cart" id="closeCart">&larr;</button>
+        <h2>Your cart</h2>
+    </div>
+    <div class="cart-items" id="cartItems">
+        <!-- Cart items show here -->
+    </div>
+    <div class="cart-footer">
+        <div class="cart-summary">
+            <p>Items: <span id="itemCount">0</span></p>
+            <p>Total: <span id="cartTotal">₱0</span></p>
+        </div>
+        <button class="checkout-btn">Go to Checkout</button>
+    </div>
+</div>
+
+<main class="main-container">
+    <aside class="sidebar-container" aria-label="Menu categories">
+        <div class="sidebar-inner">
+            <div class="sidebar-header">Menu</div>
+            <ul class="category-list">
+                <li><a href="#chicken">Chicken</a></li>
+                <li><a href="#pork">Pork</a></li>
+                <li><a href="#beef">Beef</a></li>
+                <li><a href="#fish">Fish</a></li>
+                <li><a href="#pasta">Pasta</a></li>
+                <li><a href="#vegetables">Vegetables</a></li>
+                <li><a href="#frozen">Frozen Goods</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="menu-container">
+        <h1 class="site-title">Welcome to our Menu</h1>
+        
+        <!-- Chicken -->
+        <div class="menu-section">    
+            <h2 id="chicken" class="section-title">Chicken</h2>
+
+            <div class="cards-grid">
+                <article class="menu-card" data-category="chicken" data-index="0">
+                    <img class="card-img" id="hamonado-img" src="../Images/CHICKEN HAMONADO.png" alt="Chicken Hamonado">
+                    <h3 class="card-title">Chicken Hamonado</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="chicken" data-index="1">
+                    <img class="card-img" id="cordon-bleu-img" src="../images/CORDON BLEU.png" alt="Cordon Bleu">
+                    <h3 class="card-title">Cordon Bleu</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="chicken" data-index="2">
+                    <img class="card-img" id="lechon-manok-img" src="../images/LECHON MANOK.png" alt="Chicken Hamonado">
+                    <h3 class="card-title">Lechon Manok</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+            </div>
+        </div>
+
+        <div class="menu-section">
+            
+            <h2 id="pork" class="section-title">Pork</h2>
+            
+            <!-- Pork -->
+            <div class="cards-grid">
+                <article class="menu-card" data-category="pork" data-index="0">
+                    <img class="card-img" id="pork-kare-kare-img" src="../images/CRISPY KARE-KARE.png" alt="Crispy Kare-Kare">
+                    <h3 class="card-title">Crispy Kare-Kare</h3>
+                    <span class="price">₱480.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="1">
+                    <img class="card-img" id="pork-mushroom-img" src="../images/CREAMY PORK MUSHROOM.png" alt="Pork Mushroom">
+                    <h3 class="card-title">Pork Mushroom</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="2">
+                    <img class="card-img" id="menudo-img" src="../images/MENUDO.png" alt="Menudo">
+                    <h3 class="card-title">Menudo</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="3">
+                    <img class="card-img" id="lumpiang-shanghai-img" src="../images/LUMPIANG SHANGHAI.png" alt="Lumpiang Shanghai">
+                    <h3 class="card-title">Lumpiang Shanghai</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="4">
+                    <img class="card-img" id="igado-img" src="../images/IGADO.png" alt="Igado">
+                    <h3 class="card-title">Igado</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="5">
+                    <img class="card-img" id="crispy-liempo-img" src="../images/CRISPY LIEMPO.png" alt="Crispy Liempo">
+                    <h3 class="card-title">Crispy Liempo</h3>
+                    <span class="price">₱400.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="6">
+                    <img class="card-img" id="pork-binagoongan-img" src="../images/PORK BINAGOONGAN.png" alt="Pork Binagoongan">
+                    <h3 class="card-title">Pork Binagoongan</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="7">
+                    <img class="card-img" id="pork-steak-img" src="../images/PORK STEAK.png" alt="Pork Steak">
+                    <h3 class="card-title">Pork Steak</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="8">
+                    <img class="card-img" id="pork-sisig-img" src="../images/PORK SISIG.png" alt="Pork Sisig">
+                    <h3 class="card-title">Pork Sisig</h3>
+                    <span class="price">₱400.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="9">
+                    <img class="card-img" id="dinakdakan-img" src="../images/DINAKDAKAN.png" alt="Dinakdakan">
+                    <h3 class="card-title">Dinakdakan</h3>
+                    <span class="price">₱400.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pork" data-index="10">
+                    <img class="card-img" id="crispy-pata-img" src="../images/CRISPY PATA.png" alt="Crispy Pata">
+                    <h3 class="card-title">Crispy Pata</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            
+            <h2 id="beef" class="section-title">Beef</h2>
+            
+            <!-- Beef -->
+            <div class="cards-grid">
+                <article class="menu-card" data-category="beef" data-index="0">
+                    <img class="card-img" id="beef-caldereta-img" src="../images/BEEF CALDERETA.png" alt="Beef Caldereta">
+                    <h3 class="card-title">Caldereta</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="beef" data-index="1">
+                    <img class="card-img" id="beef-steak-img" src="../images/BEEF STEAK.png" alt="Beef Steak">
+                    <h3 class="card-title">Beef Steak</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="beef" data-index="2">
+                    <img class="card-img" id="beef-broccoli-img" src="../images/BEEF BROCOLLI.png" alt="Beef Broccoli">
+                    <h3 class="card-title">Beef Broccoli</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="beef" data-index="3">
+                    <img class="card-img" id="garlic-pepper-beef-img" src="../images/GARLIC PEPPER BEEF.png" alt="Garlic Pepper Beef">
+                    <h3 class="card-title">Garlic Pepper Beef</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            
+            <h2 id="fish" class="section-title">Fish</h2>
+            
+            <!-- Fish -->
+            <div class="cards-grid">
+                <article class="menu-card" data-category="fish" data-index="0">
+                    <img class="card-img" id="crispy-fish-img" src="../images/CRISPY FISH FILLET.png" alt="Crispy Fish Fillet">
+                    <h3 class="card-title">Crispy Fish Fillet</h3>
+                    <span class="price">₱350.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="fish" data-index="1">
+                    <img class="card-img" id="relyenong-bangus-img" src="../images/RELYENONG BANGUS.png" alt="Relyenong Bangus">
+                    <h3 class="card-title">Relyenong Bangus</h3>
+                    <span class="price">₱380.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="fish" data-index="2">
+                    <img class="card-img" id="cheesy-baked-bangus-img" src="../images/CHESSEY BAKED BANGUS.png" alt="Cheesy Baked Bangus">
+                    <h3 class="card-title">Baked Bangus</h3>
+                    <span class="price">₱420.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            
+            <h2 id="pasta" class="section-title">Pasta</h2>
+            
+            <!-- Pasta -->
+            <div class="cards-grid">
+                <article class="menu-card" data-category="pasta" data-index="0">
+                    <img class="card-img" id="lasagna-img" src="../images/LASAGNA.png" alt="Lasagna">
+                    <h3 class="card-title">Lasagna</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pasta" data-index="1">
+                    <img class="card-img" id="bake-mac-img" src="../images/CHEESY BAKED MACARONI.png" alt="Bake Mac">
+                    <h3 class="card-title">Bake Mac</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pasta" data-index="2">
+                    <img class="card-img" id="carbonara-img" src="../images/CARBONARA.png" alt="Carbonara">
+                    <h3 class="card-title">Carbonara</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pasta" data-index="3">
+                    <img class="card-img" id="spaghetti-img" src="../images/SPAGHETTI.png" alt="Spaghetti">
+                    <h3 class="card-title">Spaghetti</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pasta" data-index="4">
+                    <img class="card-img" id="pesto-img" src="../images/PESTO.png" alt="Pesto">
+                    <h3 class="card-title">Pesto</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pasta" data-index="5">
+                    <img class="card-img" id="sisig-pancit-bihon-img" src="../images/SISIG PANCIT BIHON.png" alt="Sisig Pancit Bihon">
+                    <h3 class="card-title">Sisig Pancit Bihon</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pasta" data-index="6">
+                    <img class="card-img" id="pancit-canton-img" src="../images/PANCIT CANTON.png" alt="Pancit Canton">
+                    <h3 class="card-title">Pancit Canton</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="pasta" data-index="7">
+                    <img class="card-img" id="pancit-palabok-img" src="../images/PANCIT PALABOK.png" alt="Pancit Palabok">
+                    <h3 class="card-title">Pancit Palabok</h3>
+                    <span class="price">₱500.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            
+            <h2 id="vegetables" class="section-title">Vegetables</h2>
+            
+            <!-- Vegetables -->
+            <div class="cards-grid">
+                <article class="menu-card" data-category="vegetables" data-index="0">
+                    <img class="card-img" id="chopsuey-img" src="../images/CHOPSUEY.png" alt="Chopsuey">
+                    <h3 class="card-title">Chopsuey</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="vegetables" data-index="1">
+                    <img class="card-img" id="pakbet-img" src="../images/PAKBET.png" alt="Pakbet">
+                    <h3 class="card-title">Pakbet</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="vegetables" data-index="2">
+                    <img class="card-img" id="creamy-mixed-veg-img" src="../images/CREAMY MILK VEGETABLE.png" alt="Creamy Mixed Vegetables">
+                    <h3 class="card-title">Mixed Vegetables</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="vegetables" data-index="3">
+                    <img class="card-img" id="lumpia-gulay-img" src="../images/LUMPIANG GULAY.png" alt="Lumpiang Gulay">
+                    <h3 class="card-title">Lumpiang Gulay</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="vegetables" data-index="4">
+                    <img class="card-img" id="pochero-img" src="../images/POCHERO.png" alt="Pochero">
+                    <h3 class="card-title">Pochero</h3>
+                    <span class="price">₱450.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            
+            <h2 id="frozen" class="section-title">Frozen Goods</h2>
+            
+            <!-- Frozen Goods -->
+            <div class="cards-grid">
+                <article class="menu-card" data-category="frozenGoods" data-index="0">
+                    <img class="card-img" id="longganisa-sweet-img" src="../images/PORK LONGGANISA.png" alt="Sweet Skinless Longganisa">
+                    <h3 class="card-title">Skinless Longganisa</h3>
+                    <span class="price">₱80.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="1">
+                    <img class="card-img" id="longganisa-garlic-img" src="../images/CHICKEN LONGGANISA.png" alt="Garlic Longganisa">
+                    <h3 class="card-title">Garlic Longganisa</h3>
+                    <span class="price">₱80.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="2">
+                    <img class="card-img" id="glazed-ham-img" src="../images/SWEET GLAZED HAM.png" alt="Sweet Glazed Ham">
+                    <h3 class="card-title">Sweet Glazed Ham</h3>
+                    <span class="price">₱150.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="3">
+                    <img class="card-img" id="pork-siomai-img" src="../images/PORK SIOMAI.png" alt="Pork Siomai">
+                    <h3 class="card-title">Pork Siomai</h3>
+                    <span class="price">₱80.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="4">
+                    <img class="card-img" id="chicken-empanada-img" src="../images/CHICKEN EMPANADA.png" alt="Chicken Empanada">
+                    <h3 class="card-title">Chicken Empanada</h3>
+                    <span class="price">₱75.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="5">
+                    <img class="card-img" id="ham-cheese-empanada-img" src="../images/HAM & CHEESE EMPANADA.png" alt="Ham & Cheese Empanada">
+                    <h3 class="card-title">Ham & Cheese</h3>
+                    <span class="price">₱75.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="6">
+                    <img class="card-img" id="pork-sausage-img" src="../images/PORK SAUSAGE.png" alt="Pork Sausage">
+                    <h3 class="card-title">Pork Sausage</h3>
+                    <span class="price">₱100.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="7">
+                    <img class="card-img" id="chicken-sausage-img" src="../images/CHICKEN SAUSAGE.png" alt="Chicken Sausage">
+                    <h3 class="card-title">Chicken Sausage</h3>
+                    <span class="price">₱100.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="8">
+                    <img class="card-img" id="pork-tocino-img" src="../images/PORK TOCINO.png" alt="Pork Tocino">
+                    <h3 class="card-title">Pork Tocino</h3>
+                    <span class="price">₱120.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+
+                <article class="menu-card" data-category="frozenGoods" data-index="9">
+                    <img class="card-img" id="chicken-tocino-img" src="../images/CHICKEN TOCINO.png" alt="Chicken Tocino">
+                    <h3 class="card-title">Chicken Tocino</h3>
+                    <span class="price">₱120.00</span>
+                    <button class="add-btn">Add to Cart</button>
+                </article>
+            </div>
+        </div>
+
+        
+    </section>
+</main>
+
+<hr>
+
+<footer class="footer">
+    <p>&copy; 2025 Rhianne's Kitchen. All rights reserved.</p>
+    <h2>Make With Passion</h2>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script src="Menu.js"></script>
+<script src="../Header/Header.js"></script>
+</body>
+</html>

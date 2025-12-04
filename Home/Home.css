@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  background-color: #FFF7EB;
+}
+
+.main-page {
+  background-image: url('../Images/catering 6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.bg-cycler {
+  position: absolute;
+  inset: 0;
+  z-index: 0; /* under overlay (which is z-index:1) and content (z-index:2) */
+  pointer-events: none;
+}
+
+/* each slide fills the area */
+.bg-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease;
+  will-change: opacity;
+}
+
+/* visible slide */
+.bg-slide.visible {
+  opacity: 1;
+}
+
+/* semi-transparent overlay for better text readability */
+.main-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/*"to" text*/
+.main-page h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: -80px;
+  color: #BB4F50;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2px;
+}
+
+/*"welcome" text*/
+.main-page h1:nth-child(1) {
+  margin-bottom: -80px;
+  margin-top: -10px;
+  font-size: 120px;
+  color: #BB4F50;
+}
+
+/* "Rhianne's Kitchen" text */
+.main-page h1:nth-child(3) {
+  font-size: 72px;
+  color: #FFF7EB;
+  font-style: italic;
+  font-weight: 900;
+  padding: 16px 32px;
+  border-radius: 8px;
+  margin-bottom: -30px;
+}
+
+/* "We Make With Passion" text */
+.main-page p {
+  font-size: 32px;
+  color: #BB4F50;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 12px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.display-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: #FFF7EB;
+  flex-wrap: wrap;
+}
+
+.display-images img {
+  width: 280px;
+  height: 220px;
+  object-fit: cover;
+  border: 6px solid #BB4F50;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+}
+
+.display-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(187, 79, 80, 0.3);
+}
+
+.about-us-heading{
+    display: flex;
+    justify-content: center;
+    color: #BB4F50;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us-paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 100px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5c2a2b;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.shortcuts {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 60px;
+  padding: 60px 40px;
+  background-color: #FFF7EB;
+  flex-wrap: wrap;
+}
+
+.shortcut-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+}
+
+.shortcut-item h3{
+  font-size: 28px;
+}
+
+.shortcut-item img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border: 6px solid #BB4F50;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shortcut-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(187, 79, 80, 0.3);
+}
+
+.shortcut-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #5F5C5E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 16px 0 24px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.shortcut-button {
+  background-color: #BB4F50;
+  color: #FFF7EB;
+  border: none;
+  padding: 14px 48px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: capitalize;
+}
+
+.shortcut-button:hover {
+  background-color: #8f3a39;
+  transform: translateY(-2px);
+}
+
+/* Media Query */
+@media (max-width: 720px) {
+  .main-page {
+    height: 60vh;
+    padding-inline: 16px;
+    text-align: center;
+  }
+
+  .main-page h1:nth-child(1) {
+    font-size: 56px;
+    margin-bottom: -40px;
+    margin-top: 0;
+  }
+
+  .main-page h1:nth-child(2) {
+    font-size: 24px;
+    margin-bottom: -40px;
+  }
+
+  .main-page h1:nth-child(3) {
+    font-size: 40px;
+    padding: 12px 20px;
+    margin-bottom: -16px;
+  }
+
+  .main-page p {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  .display-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding-inline: 16px;
+    padding-block: 20px;
+  }
+
+  .display-images img {
+    width: 100%;
+    height: 150px;
+    border: 3px solid #BB4F50;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .about-us-heading {
+    font-size: 28px;
+    padding-inline: 16px;
+    margin: 20px 0 12px 0;
+  }
+
+  .about-us-paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-inline: 16px;
+    margin-bottom: 20px;
+  }
+
+  .shortcuts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-inline: 16px;
+    padding-block: 20px;
+    max-width: 100%;
+  }
+
+  .shortcut-item {
+    max-width: 100%;
+  }
+
+  .shortcut-item img {
+    width: 100%;
+    height: 200px;
+    border: 3px solid #BB4F50;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .shortcut-heading {
+    font-size: 18px;
+    margin: 12px 0 8px 0;
+  }
+
+  .shortcut-button {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+
+  .bg-cycler {
+    display: none;
+  }
+}
+

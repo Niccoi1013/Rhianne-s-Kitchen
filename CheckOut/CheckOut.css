@@ -1,0 +1,338 @@
+:root {
+    --red: #BB4F50;
+    --gray: #5D5B5E;
+    --black: #1E1B18;
+    --bg: #F7E8D7;
+}
+
+body {
+    background: #FFF7EB;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+    margin: 0;
+}
+
+.checkout-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.tabs {
+    display: flex;
+    background: var(--gray);
+    padding: 4px;
+    border-radius: 8px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 45px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tabs .active {
+    background: var(--red);
+}
+
+.checkout-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.left-box {
+    width: 55%;
+    background: #fdf0e4;
+    padding: 25px 18px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.section-title {
+    font-family: 'Alegreya Sans SC';
+    color: var(--red);
+    font-size: 26px;
+}
+
+.map-box img {
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.address-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.edit-btn {
+    background: none;
+    border: none;
+    color: var(--red);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.input-label {
+    margin-top: 12px;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.input-field,
+.input-area {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d3b8a2;
+    background: #FFFAE8;
+    font-size: 16px;
+    transition: font-size 0.2s;
+    box-sizing: border-box;
+}
+
+.input-area {
+    height: 75px;
+}
+
+.hidden-date-input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.pickup-date-box {
+    background: #F7E8D7;
+    padding: 12px 16px; 
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #5D5B5E;
+    border: 1px solid #d3b8a2;
+    min-width: 220px;
+}
+
+.pickup-date-box img {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+}
+
+.pickup-date-box input[type="date"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    color: #5D5B5E;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.pickup-date-box input[type="date"]::-webkit-datetime-edit {
+    padding: 0 2px;
+}
+
+
+.pickup-date-box input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: contrast(0.6) saturate(0.7);
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+}
+
+.pickup-date-box input[type="date"]::-webkit-inner-spin-button,
+.pickup-date-box input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+.pickup-date-box:hover,
+.pickup-date-box:focus-within {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    border-color: #c9a88a;
+}
+
+.right-box {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 18px 12px;
+    box-sizing: border-box;
+}
+
+.order-box {
+    background: #FDF0E4;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.order-box h2,
+.section-title {
+    font-family: 'Alegreya Sans SC';
+    color: var(--red);
+    font-size: 28px !important;
+    margin-top: 0;
+}
+
+.order-box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.order-box hr {
+    border: none;
+    border-top: 1px solid #ccb7a7;
+    margin: 12px 0;
+}
+
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    color: var(--red);
+    margin-top: 18px;
+}
+
+.payment-btn {
+    width: 100%;
+    padding: 15px;
+    background: #F7E8D7;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--red);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.dropdown {
+    width: 100%;
+    background: #FFFAE8;
+    border: 1px solid #d3b8a2;
+    border-radius: 12px;
+    margin-top: 5px;
+    padding: 8px 0;
+    display: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    background: #F7E8D7;
+}
+
+.place-btn {
+    width: 100%;
+    padding: 18px;
+    background: #BB4F50;
+    color: #FFFAE8;
+    border: none;
+    border-radius: 14px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 3px 12px rgba(131, 90, 90, 0.15);
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .checkout-wrapper {
+        max-width: 98vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .checkout-content {
+        gap: 24px;
+    }
+    .left-box, .right-box {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .left-box {
+        width: 60%;
+    }
+    .right-box {
+        width: 40%;
+    }
+    .input-field,
+    .input-area {
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .checkout-wrapper {
+        max-width: 100vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .checkout-content {
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .left-box, .right-box {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .order-box {
+        padding: 12px;
+    }
+    .input-field,
+    .input-area {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+    .pickup-date-box {
+        min-width: 140px;
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+}
+
+

@@ -1,0 +1,774 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    background: #fbf3ea; 
+    color: #333;
+}
+
+
+.main-container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-container::before,
+.main-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.sidebar-container {
+    width: 340px;
+    
+    position: sticky;
+    top: 182px;
+    align-self: flex-start;
+}
+
+.sidebar-inner {
+    background: #BB4F50; 
+    color: #FAEADA;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.sidebar-header {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    padding: 16px 0 0 20px;
+    font-size: 2.34375rem;
+    letter-spacing: 1px;
+}
+
+.category-list {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.category-list li {
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.category-list a {
+    display: block;
+    padding: 10px 18px;
+
+    color: #FAEADA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: background 0.18s, padding-left 0.18s;
+}
+
+.category-list a:hover {
+    background: rgba(0,0,0,0.06);
+    padding-left: 22px;
+}
+
+.category-list a.active {
+    background: rgba(0,0,0,0.12);
+    font-weight: 600;
+}
+
+
+.menu-container {
+    flex: 1 1 auto;
+    gap: 100px;
+    
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+
+.site-title {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: center;
+    margin: 6px 0 24px;
+    font-size: 4.5rem;
+    color: #b14b4b;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 3rem;
+    color: #5D5B5E;
+    margin: 10px 0 20px;
+}
+
+
+.menu-section {
+    margin-bottom: 36px;
+    border-bottom: 1px solid rgba(0,0,0,.20);
+}
+
+
+
+
+.section-header .section-title {
+    margin: 0;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 40px 20px 40px;
+}
+
+
+.menu-card {
+    background: #FAEADA;
+    border-radius: 12px;
+    padding-top: 70px; 
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    text-align: left;
+    box-shadow:
+        0 6px 12px rgba(0,0,0,0.15),
+        inset 0 -6px 12px rgba(0, 0, 0, 0.02);
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+    min-height: 120px;
+    position: relative;
+    overflow: visible; 
+}
+
+.card-img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#hamonado-img {
+    height: 200px;
+    position: absolute;
+    top: -100px;
+}
+
+#lechon-manok-img {
+    position: absolute;
+    top: -110px;
+}
+
+#pork-kare-kare-img {
+    width: 210px;
+    height: 200px;
+    top: -108px;
+}
+
+#pork-mushroom-img {
+    width: 220px;
+    height: 200px;
+    top: -100px;
+}
+
+#menudo-img {
+    width: 220px;
+    height: 175px;
+    top: -105px;
+}
+
+#pork-steak-img {
+    width: 200px;
+    height: 150px;
+    top: -70px;
+}
+
+#pork-sisig-img {
+    width: 220px;
+    top: -115px;
+}
+
+#crispy-liempo-img { 
+    top: -115px;
+}
+
+#lumpiang-shanghai-img {
+    width: 220px;
+    height: 180px;
+    top: -100px;
+}
+
+#igado-img {
+    width: 230px;
+    height: 190px;
+    top: -80px;
+}
+
+#pork-binagoongan-img {
+    width: 220px;
+    height: 200px;
+    top: -105px;
+}
+
+#dinakdakan-img {
+    width: 220px;
+    height: 170px;
+    top: -85px;
+}
+
+#crispy-pata-img {
+    width: 240px;
+    height: 210px;
+    top: -105px;
+}
+
+#beef-caldereta-img {
+    width: 234px;
+    height: 240px;
+    top: -112.5px;
+}
+
+#beef-steak-img {
+    width: 234px;
+    height: 240px;
+    top: -122px;
+}
+
+#beef-broccoli-img {
+    width: 234px;
+    height: 240px;
+    top: -120px;
+}
+
+#garlic-pepper-beef-img {
+    width: 215px;
+    height: 180px;
+    top: -70px;
+}
+
+
+#crispy-fish-img {
+    width: 220px;
+    height: 240px;
+    top: -115px;
+}
+
+#relyenong-bangus-img {
+    width: 210px;
+    height: 155px;
+    top: -75px;
+}
+
+#cheesy-baked-bangus-img {
+    width: 220px;
+    height: 190px;
+    top: -110px;
+}
+
+#lasagna-img {
+    top: -120px;
+}
+
+#bake-mac-img {
+    top: -135px;
+}
+
+#carbonara-img {
+    right: 100px;
+    top: -105px;
+}
+
+#spaghetti-img {
+    top: -115px;
+}
+
+#pesto-img {
+    top: -125px;
+}
+
+#sisig-pancit-bihon-img {
+    width: 230px;
+    height: 230px;
+    top: -115px;
+}
+
+#pancit-canton-img {
+    width: 240px;
+    height: 240px;
+    top: -110px;
+}
+
+#pancit-palabok-img {
+    width: 230px;
+    height: 175px;
+    top: -90px;
+}
+
+#chopsuey-img {
+    width: 160px;
+    height: 160px;
+    top: -80px;
+}
+
+#pakbet-img {
+    width: 160px;
+    height: 160px;
+    top: -80px;
+}
+
+#creamy-mixed-veg-img {
+    width: 160px;
+    height: 160px;
+    top: -85px;
+}
+
+#lumpia-gulay-img {
+    width: 200px;
+    height: 200px;
+    top: -90px;
+}
+
+#pochero-img {
+    width: 180px;
+    height: 180px;
+    top: -90px;
+}
+
+#longganisa-sweet-img {
+    width: 220px;
+    height: 180px;
+    top: -100px;
+}
+
+#longganisa-garlic-img {
+    width: 220px;
+    height: 180px;
+    top: -100px;
+}
+
+#glazed-ham-img {
+    width: 230px;
+    height: 200px;
+    top: -110px;
+}
+
+#pork-siomai-img {
+    width: 230px;
+    height: 230px;
+    top: -110px;
+}
+
+#chicken-empanada-img {
+    width: 210px;
+    height: 190px;
+    top: -105px;
+}
+
+#ham-cheese-empanada-img {
+    width: 210px;
+    height: 190px;
+    top: -105px;
+}
+
+#pork-sausage-img {
+    width: 220px;
+    height: 180px;
+    top: -100px;
+}
+
+#chicken-sausage-img {
+    width: 220px;
+    height: 180px;
+    top: -100px;
+}
+
+#pork-tocino-img {
+    width: 175px;
+    height: 175px;
+    top: -100px;
+}
+
+#chicken-tocino-img {
+    width: 175px;
+    height: 175px;
+    top: -100px;
+}
+
+.card-title {
+    justify-content: flex-start;
+    font-size: 1.75rem;
+    color: #b74b4b;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    margin: 0 0 2px 0; 
+    text-align: left; 
+    align-self: flex-start; 
+    width: 100%; 
+}
+
+.price {
+    display: inline-block;
+    background: #E77371;
+    color: #FFFAE8;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: .74em;
+    margin-bottom: 5px; 
+    align-self: flex-start;
+}
+
+
+.add-btn {
+    margin-top: 8px;
+    background: #b74b4b;
+    color: #FFFAE8;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(183,75,75,0.2);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 14px rgba(183,75,75,0.22);
+}
+
+
+
+/* Enhanced Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open { display: flex; }
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.modal-panel {
+    position: relative;
+    background: #1a1a1a;
+    border-radius: 12px;
+    width: 520px;
+    max-width: calc(100% - 40px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    color: #fff;
+}
+
+.modal-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #333;
+}
+.modal-item-name {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.modal-category {
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    color: #aaa;
+    margin-bottom: 16px;
+}
+
+.modal-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.modal-section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.size-buttons {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.size-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.size-option input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.size-option input[type="radio"]:checked {
+    border-color: #0066ff;
+    background: #0066ff;
+}
+
+.size-option span {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+.size-option input[type="radio"]:checked + span {
+    background: #0066ff;
+    color: #fff;
+}
+
+.modal-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.modal-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-label {
+    font-size: 0.9rem;
+    color: #aaa;
+    font-weight: 600;
+}
+.modal-input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+}
+.modal-input:focus {
+    outline: none;
+    border-color: #0066ff;
+    background: #333;
+}
+
+.modal-footer {
+    padding: 16px 24px;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    border-top: 1px solid #333;
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+.btn-cancel {
+    background: #505050;
+    color: #fff;
+}
+.btn-cancel:hover {
+    background: #606060;
+}
+.btn-add {
+    background: #0066ff;
+    color: #fff;
+    min-width: 140px;
+}
+.btn-add:hover {
+    background: #0052cc;
+}
+
+
+
+/* Media Query */
+@media (max-width: 1200px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+        margin-right: 40px;
+        gap: 24px;
+    }
+
+    .main-container { padding-left: 0; }
+    .sidebar-container {
+        width: 300px;
+        margin-left: 0;
+        left: 0;
+    }
+
+    #hamonado-img { height: 160px; top: -80px; }
+    #lechon-manok-img { top: -88px; }
+    #pork-kare-kare-img { width: 168px; height: 160px; top: -86px; }
+    #pork-mushroom-img { width: 176px; height: 160px; top: -80px; }
+    #menudo-img { width: 176px; height: 140px; top: -84px; }
+    #pork-steak-img { width: 160px; height: 120px; top: -56px; }
+    #pork-sisig-img { width: 176px; top: -92px; }
+    #crispy-liempo-img { top: -92px; }
+    #lumpiang-shanghai-img { width: 176px; height: 144px; top: -80px; }
+    #igado-img { width: 184px; height: 152px; top: -68px; }
+    #pork-binagoongan-img { width: 176px; height: 160px; top: -84px; }
+    #dinakdakan-img { width: 176px; height: 136px; top: -72px; }
+    #crispy-pata-img { width: 192px; height: 168px; top: -84px; }
+    #beef-caldereta-img { width: 187px; height: 192px; top: -90px; }
+    #beef-steak-img { width: 187px; height: 192px; top: -98px; }
+    #beef-broccoli-img { width: 187px; height: 192px; top: -96px; }
+    #garlic-pepper-beef-img { width: 172px; height: 144px; top: -56px; }
+    #crispy-fish-img { width: 176px; height: 192px; top: -92px; }
+    #relyenong-bangus-img { width: 168px; height: 124px; top: -60px; }
+    #cheesy-baked-bangus-img { width: 176px; height: 152px; top: -88px; }
+    #lasagna-img { top: -96px; }
+    #bake-mac-img { top: -108px; }
+    #carbonara-img { right: 80px; top: -84px; }
+    #spaghetti-img { top: -92px; }
+    #pesto-img { top: -100px; }
+    #sisig-pancit-bihon-img { width: 184px; height: 184px; top: -92px; }
+    #pancit-canton-img { width: 192px; height: 192px; top: -88px; }
+    #pancit-palabok-img { width: 184px; height: 140px; top: -72px; }
+    #chopsuey-img { width: 128px; height: 128px; top: -64px; }
+    #pakbet-img { width: 128px; height: 128px; top: -64px; }
+    #creamy-mixed-veg-img { width: 128px; height: 128px; top: -68px; }
+    #lumpia-gulay-img { width: 160px; height: 160px; top: -72px; }
+    #pochero-img { width: 144px; height: 144px; top: -72px; }
+    #longganisa-sweet-img { width: 176px; height: 144px; top: -80px; }
+    #longganisa-garlic-img { width: 176px; height: 144px; top: -80px; }
+    #glazed-ham-img { width: 184px; height: 160px; top: -88px; }
+    #pork-siomai-img { width: 184px; height: 184px; top: -88px; }
+    #chicken-empanada-img { width: 168px; height: 152px; top: -84px; }
+    #ham-cheese-empanada-img { width: 168px; height: 152px; top: -84px; }
+    #pork-sausage-img { width: 176px; height: 144px; top: -80px; }
+    #chicken-sausage-img { width: 176px; height: 144px; top: -80px; }
+    #pork-tocino-img { width: 140px; height: 140px; top: -80px; }
+    #chicken-tocino-img { width: 140px; height: 140px; top: -80px; }
+
+    .card-img { width: 200px; height: 200px; top: -90px; }
+    .menu-card { margin-top: 100px; }
+}
+
+@media (max-width: 720px) {
+    .main-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 12px;
+        padding: 8px 12px;
+    }
+
+   
+    .main-container { padding-left: 0; }
+    .sidebar-container {
+        position: sticky;
+        top: 150px; 
+        width: 120px;      
+        min-width: 120px;
+        margin-left: 0;
+        left: 0;
+        z-index: 1100;
+        align-self: flex-start;
+    }
+    .sidebar-inner {
+        border-radius: 12px;
+        padding-bottom: 8px;
+    }
+    .sidebar-header {
+        font-size: 1.1rem;
+        padding: 12px 10px;
+    }
+
+    
+    .category-list a {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+        white-space: normal;
+    }
+
+    
+    .menu-container {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr; 
+        gap: 16px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 12px 0 40px;
+    }
+
+    .menu-card {
+        margin-top: 40px;
+        padding-top: 60px;
+    }
+    .card-img {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+
+    .add-btn {
+        width: 100%;
+        max-width: none;
+    }
+
+    .site-title { font-size: 2rem; margin-top: 8px; }
+    .section-title { font-size: 1.5rem; }
+
+    .sidebar-container:focus-within { outline: none; }
+}
+
+
+
+
+

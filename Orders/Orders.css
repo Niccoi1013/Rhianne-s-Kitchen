@@ -1,0 +1,160 @@
+:root{
+  --accent:#BB4F50;
+  --muted:#5d5b5e;
+  --bg:#fff7eb;
+  --card:#FAEADA;
+  --shadow: 6px 10px 24px rgba(0,0,0,0.08);
+  --radius:14px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Montserrat";
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.orders-wrapper{
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 32px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.orders-wrapper > h2{
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: var(--accent);
+  font-weight:700;
+  margin: 0 0 18px;
+  font-size: clamp(20px, 2.2vw, 28px);
+}
+
+.item-qty{
+  min-width:34px;
+  height:34px;
+  border-radius:8px;
+  background:rgba(187,79,80,0.08);
+  color:var(--accent);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:14px;
+}
+
+#ordersList {
+  flex: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.order-card {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  margin-bottom: 14px;
+  background: var(--card);
+  box-sizing: border-box;
+}
+
+.order-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.order-items {
+  font-weight: 800;
+  color: var(--accent);
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 12px;
+  flex: 1;
+}
+
+.order-total {
+  font-weight: 900;
+  color: #BB4F50;
+  font-size: 16px;
+  flex: 0 0 auto;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.order-date {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.order-delivery {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+@media (max-width: 1200px){
+  .orders-wrapper{ padding:20px; }
+  .item-price{ min-width:80px; font-size:15px; }
+  .order-render p{ font-size:14px; }
+}
+
+@media (max-width: 720px){
+  .orders-wrapper{ padding:16px; }
+  .order-render,
+  .order-summary {
+    padding:12px;
+    border-radius:12px;
+  }
+
+  .order-render p,
+  #ordersList .order-item {
+    flex-direction:column;
+    align-items:stretch;
+    text-align:left;
+    gap:8px;
+  }
+  .item-left{
+    gap:10px;
+    align-items:center;
+  }
+  .item-qty{ width:40px; height:40px; }
+  .item-price{ text-align:left; font-weight:700; color:#222; }
+  .total-line{ font-size:16px; }
+  .order-meta{ font-size:12px; }
+}
+
+@media (max-width: 480px) {
+  .order-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .order-items {
+    white-space: normal;
+    font-size: 15px;
+  }
+  .order-total {
+    text-align: left;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="../Header/Header.css">
+    <link rel="stylesheet" href="Settings.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+    </style>
+    
+</head>
+<body>
+    
+<header class="header">
+
+    <div class="logo">
+        <a href="../Home/Home.html">
+            <img src="../images/LOGO.png" alt="Rhianne's Kitchen Logo">
+        </a>
+    </div>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="right-section">
+        <div class="settings-wrapper" style="position: relative;">
+            <button class="settings-button" aria-label="Settings" id="settingsBtn">
+                <img src="../Images/profile.png" alt="Settings" class="setting-icon">
+            </button>
+            <div class="settings-dropdown" id="settingsDropdown">
+                <a href="../Login/Login.html">Account</a>
+                <a href="../Orders/Orders.html">Orders</a>
+            </div>
+        </div>
+        <div class="cart" id="cartBtn">
+            <img src="../Images/cart.png" alt="Cart">
+        </div>
+    </div>
+
+</header>
+
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <button class="close-cart" id="closeCart">&larr;</button>
+        <h2>Your cart</h2>
+    </div>
+    <div class="cart-items" id="cartItems">
+    </div>
+    <div class="cart-footer">
+        <div class="cart-summary">
+            <p>Items: <span id="itemCount">0</span></p>
+            <p>Total: <span id="cartTotal">₱0</span></p>
+        </div>
+        <button class="checkout-btn">Go to Checkout</button>
+    </div>
+</div>
+
+<main class="main">
+    <h2>Account Settings</h2>
+
+    <div class="settings-area">
+        <form class="settings-form">
+            <div class="form-container">
+                <div class="column personal-info">
+                    <h3>Personal Information</h3>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Contact number</label>
+                        <input type="tel" placeholder="Enter Phone Number">
+                    </div>
+                </div>
+
+                <div class="column delivery-info">
+                    <h3>Delivery information</h3>
+                    <div class="form-group">
+                        <label>Address label</label>
+                        <input type="text" placeholder="home/work/others">
+                    </div>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuNiJX!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="200" style="border:none; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter Your Full Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Floor/Unit #">
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="save-button">Save Changes</button>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+<hr>
+
+<footer class="footer">
+    <p>&copy; 2025 Rhianne's Kitchen. All rights reserved.</p>
+    <h2>Make With Passion</h2>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script src="Settings.js"></script>
+<script src="../Header/Header.js"></script>
+</body>
+</html>

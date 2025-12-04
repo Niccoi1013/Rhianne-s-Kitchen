@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="CheckOut.css">
+    <link rel="stylesheet" href="../Header/Header.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+<header class="header">
+
+    <div class="logo">
+        <a href="../Home/Home.html">
+            <img src="../images/LOGO.png" alt="Rhianne's Kitchen Logo">
+        </a>
+    </div>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+   <div class="right-section">
+        <div class="settings-wrapper" style="position: relative;">
+            <button class="settings-button" aria-label="Settings" id="settingsBtn">
+                <img src="../Images/profile.png" alt="Settings" class="setting-icon">
+            </button>
+            <div class="settings-dropdown" id="settingsDropdown">
+                <a href="../Login/Login.html">Account</a>
+                <a href="../Orders/Orders.html">Orders</a>
+            </div>
+        </div>
+        <div class="cart" id="cartBtn">
+            <img src="../Images/cart.png" alt="Cart">
+        </div>
+    </div>
+</header>
+
+<div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+        <button class="close-cart" id="closeCart">&larr;</button>
+        <h2>Your cart</h2>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-summary">
+            <p>Items: <span id="itemCount">0</span></p>
+            <p>Total: <span id="cartTotal">₱0</span></p>
+        </div>
+        <button class="checkout-btn">Go to Checkout</button>
+    </div>
+</div>
+
+<main class="checkout-wrapper">
+    <div class="tabs">
+        <button id="deliveryTab" class="active" type="button">Delivery</button>
+        <button id="pickupTab" type="button">Pick-Up</button>
+    </div>
+
+    <div class="checkout-content">
+        <section class="left-box" id="deliverySection">
+            <h2 class="section-title">Delivery address</h2>
+            <div class="map-box">
+                <iframe
+                    width="100%"
+                    height="210"
+                    style="border-radius:12px; border:none;"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Marilao+Bulacan&output=embed">
+                </iframe>
+            </div>
+            <div class="address-line">
+                <div>
+                    <strong>Marilao, Bulacan</strong><br>
+                    <span>Home</span>
+                </div>
+                <button class="edit-btn">Edit</button>
+            </div>
+            <label class="input-label">Floor / Unit</label>
+            <input class="input-field" type="text">
+            <label class="input-label">Note</label>
+            <textarea class="input-area"></textarea>
+        </section>
+
+        <section class="left-box" id="pickupSection" style="display:none;">
+            <h2 class="section-title">Pick-up address</h2>
+            <div class="map-box">
+                <iframe
+                    width="100%"
+                    height="210"
+                    style="border-radius:12px; border:none;"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Marilao+Bulacan&output=embed">
+                </iframe>
+            </div>
+            <div>
+                <strong>Marilao, Bulacan</strong><br>
+                <span>16 Ballast, Meralco Village, Lias</span>
+            </div>
+            <label class="input-label" style="margin-top:20px;">Date of pick-up</label>
+            <input type="date" id="pickupDate" class="hidden-date-input">
+            <div class="pickup-date-box" id="pickupDateBox">
+                <input type="date">
+            </div>
+        </section>
+
+        <section class="right-box">
+            <h2 class="section-title">Your order</h2>
+            <div class="order-box" id="orderBox">
+            </div>
+            <button id="paymentBtn" class="payment-btn">Payment method +</button>
+            <div id="paymentDropdown" class="dropdown hide">
+                <div class="dropdown-item" data-method="Maya">Maya</div>
+                <div class="dropdown-item" data-method="GCash">GCash</div>
+                <div class="dropdown-item" data-method="Cash">Cash</div>
+            </div>
+            <button id="placeOrder" class="place-btn">Place order</button>
+        </section>
+    </div>
+</main>
+
+<hr>
+<footer class="footer">
+    <p>&copy; 2025 Rhianne's Kitchen. All rights reserved.</p>
+    <h2>Make With Passion</h2>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../Menu/Menu.html">Menu</a></li>
+            <li><a href="../Contacts/Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+</footer>
+<script src="CheckOut.js"></script>
+<script src="../Header/Header.js"></script>
+</body>
+</html>
